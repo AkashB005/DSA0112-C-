@@ -7,8 +7,8 @@ int main() {
     cin >> n;
 
     while (n > 0) {
-        sum += n % 10;
-        n /= 10;      
+        sum += n % 10; // Add the last digit to sum
+        n /= 10;       // Remove the last digit
     }
 
     cout << "Sum of digits: " << sum << endl;
